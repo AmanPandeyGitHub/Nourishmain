@@ -78,20 +78,20 @@ const [formData, setFormData] = useState({
         </div>
         {formData.occupation=="cookedmeal" ? <div className="form-group">
         <label htmlFor="gender" className="form-label">Available</label>
-        <div>
-          <div>
+        <div class="checkbox-supercontainer">
+          <div class="checkbox-container">
             <input type="checkbox" name="languages" value="html" onChange={onChangeHandler} checked={formData.languages.indexOf('html') !== -1} />
             <label htmlFor="html">Dal</label>
           </div>
-          <div>
+          <div class="checkbox-container">
             <input type="checkbox" name="languages" value="css" onChange={onChangeHandler} checked={formData.languages.indexOf('css') !== -1} />
             <label htmlFor="css">Steam Rice</label>
           </div>
-          <div>
+          <div class="checkbox-container">
             <input type="checkbox" name="languages" value="javascript" onChange={onChangeHandler} checked={formData.languages.indexOf('javascript') !== -1} />
             <label htmlFor="javascript">Paneer</label>
           </div>
-          <div>
+          <div class="checkbox-container">
           <input type="checkbox" name="languages" value="javascript" onChange={onChangeHandler} checked={formData.languages.indexOf('javascript') !== -1} />
           <label htmlFor="javascript">Roti</label>
           </div>
@@ -103,24 +103,24 @@ const [formData, setFormData] = useState({
 
       {formData.occupation=="rawmaterial" ? <div className="form-group">
         <label htmlFor="gender" className="form-label">Available</label>
-        <div>
-          <div>
+        <div class="checkbox-supercontainer">
+          <div class="checkbox-container">
             <input type="checkbox" name="languages" value="html" onChange={onChangeHandler} checked={formData.languages.indexOf('html') !== -1} />
             <label htmlFor="html">Rice</label>
           </div>
-          <div>
+          <div class="checkbox-container">
             <input type="checkbox" name="languages" value="css" onChange={onChangeHandler} checked={formData.languages.indexOf('css') !== -1} />
             <label htmlFor="css">Flour</label>
           </div>
-          <div>
+          <div class="checkbox-container">
             <input type="checkbox" name="languages" value="javascript" onChange={onChangeHandler} checked={formData.languages.indexOf('javascript') !== -1} />
             <label htmlFor="javascript">Vegetables</label>
           </div>
-          <div>
+          <div class="checkbox-container">
           <input type="checkbox" name="languages" value="javascript" onChange={onChangeHandler} checked={formData.languages.indexOf('javascript') !== -1} />
           <label htmlFor="javascript">Fruits</label>
           </div>
-          <div>
+          <div class="checkbox-container">
           <input type="checkbox" name="languages" value="javascript" onChange={onChangeHandler} checked={formData.languages.indexOf('javascript') !== -1} />
           <label htmlFor="javascript">Pulses</label>
           </div>
@@ -132,24 +132,24 @@ const [formData, setFormData] = useState({
       
       {formData.occupation=="pkgfood" ? <div className="form-group">
         <label htmlFor="gender" className="form-label">Available</label>
-        <div>
-          <div>
+        <div class="checkbox-supercontainer">
+          <div class="checkbox-container">
             <input type="checkbox" name="languages" value="html" onChange={onChangeHandler} checked={formData.languages.indexOf('html') !== -1} />
             <label htmlFor="html">Biscuits</label>
           </div>
-          <div>
+          <div class="checkbox-container">
             <input type="checkbox" name="languages" value="css" onChange={onChangeHandler} checked={formData.languages.indexOf('css') !== -1} />
             <label htmlFor="css">Namkeen</label>
           </div>
-          <div>
+          <div class="checkbox-container">
             <input type="checkbox" name="languages" value="javascript" onChange={onChangeHandler} checked={formData.languages.indexOf('javascript') !== -1} />
             <label htmlFor="javascript">Cakes</label>
           </div>
-          <div>
+          <div class="checkbox-container">
           <input type="checkbox" name="languages" value="javascript" onChange={onChangeHandler} checked={formData.languages.indexOf('javascript') !== -1} />
           <label htmlFor="javascript">Sweets</label>
           </div>
-          <div>
+          <div class="checkbox-container">
           <input type="checkbox" name="languages" value="javascript" onChange={onChangeHandler} checked={formData.languages.indexOf('javascript') !== -1} />
           <label htmlFor="javascript">Juices</label>
           </div>
@@ -160,9 +160,9 @@ const [formData, setFormData] = useState({
       </div> : <div></div>}
 
       <div className='map-bottom'>
-      <SearchLocationInput setSelectedLocation={setSelectedLocation} />
-      <MapComponent selectedLocation={selectedLocation} />
-    </div>
+        <SearchLocationInput setSelectedLocation={setSelectedLocation} />
+        <MapComponent class="gmap" selectedLocation={selectedLocation} />
+      </div>
 
       
 

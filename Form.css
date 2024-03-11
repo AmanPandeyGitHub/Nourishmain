@@ -4,19 +4,22 @@
     margin-left: 50px;
     max-width: 90%;
     align-content: center;
+    border-width: 1px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #f7f3ef;
+    box-shadow: 2px 2px 3px;
 }
 
 .form-group label, .map-search{
     font-size: 20px;
     flex-basis: 48%;
     color: #6D597A;
-    background-color:#EFE6DD;
 }
 
 .form-group input[type="checkbox"]{
-    display: block;
     width: auto;
-    background: #fef6eb;
+    margin-right: 10px;
     margin-bottom: 3px;
     margin-top: 15px;
     border-radius: 50%; 
@@ -44,3 +47,15 @@
     box-shadow: 0.5px 0.5px 0.3px inset;
   }
 
+.checkbox-container{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.checkbox-supercontainer{
+    display: block; /* - */
+}
+
+.map-bottom{
+    padding-bottom: 15px;
+}
