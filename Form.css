@@ -1,0 +1,46 @@
+
+.App {
+    margin: 40px auto;
+    margin-left: 50px;
+    max-width: 90%;
+    align-content: center;
+}
+
+.form-group label, .map-search{
+    font-size: 20px;
+    flex-basis: 48%;
+    color: #6D597A;
+    background-color:#EFE6DD;
+}
+
+.form-group input[type="checkbox"]{
+    display: block;
+    width: auto;
+    background: #fef6eb;
+    margin-bottom: 3px;
+    margin-top: 15px;
+    border-radius: 50%; 
+}
+
+.form-select{
+    padding: 5px;
+    margin: 20px;
+    background-color: #fef6eb;
+    border-radius: 20px;
+    color: #6D597A;
+}
+
+.form-control, .form-group input[type="text"]{
+    display: block;
+    width: 60%;
+    background: #fef6eb;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    resize: none;
+    border-radius: 20px;
+    box-shadow: 0.5px 0.5px 0.3px inset;
+  }
+
